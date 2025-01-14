@@ -68,3 +68,68 @@ nav ul{
     flex: 1;
     padding:2%;
 }
+
+/* CSS rules for mobile devices */
+ @media (320px <= width <=768px) {
+         nav ul {
+     position: fixed;
+     left: -110%;
+     top: 5rem;
+     flex-direction: column;
+     background-color: lightcyan;
+     width: 15%; /* this width of the side menu*/
+     border-radius: 10px;
+     transition: 0.3s;
+     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+ }
+ nav ul.active {
+     left:0;
+ }
+ nav ul li{
+     margin: 2.5rem 0;
+     color:whitesmoke;
+
+ }
+
+ .hamburger{
+     display:block;
+     margin-left: 90%;
+     cursor:pointer;
+ }
+ .hamburger.active .bar:nth-child(2) {
+     opacity:0;
+ }
+ .hamburger.active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+ }
+ .hamburger.active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+ }
+ .bar {
+     display: block;
+     width: 25px;
+     height: 3px;
+     margin: 5px auto;
+     -webkit-transition: all 0.3s ease-in-out;
+     transition: all 0.3s ease-in-out;
+     background-color: whitesmoke;
+ }
+ #top_left_section div {
+     color:whitesmoke;
+     text-align:center;
+     font-size:4vw;
+ }
+ #top_left_section ul li {
+     color: whitesmoke;
+     list-style: none;
+     font-size: 2.8vw;
+     line-height:30px;
+
+ }
+ #top_left_section ul li::before {
+     content: "";
+     content: "➤ ";
+     color:blueviolet;
+     font-size:3vw;
+ }
+ }
