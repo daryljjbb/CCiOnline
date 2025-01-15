@@ -365,6 +365,15 @@ nav ul{
         color: whitesmoke;
         font-size: 3.5vw;
     }
+    #top_left_item1{
+        margin-left:10%;
+    }
+    #top_left_item2{
+        margin-left:4%;
+    }
+    #top_left_item3{
+        margin-left:8%;
+    }
 
     #top_left_section ul li {
         color: whitesmoke;
