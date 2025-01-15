@@ -50,6 +50,16 @@ body {
 
 .card_text {
     color: black;
+    font-family: 'Cormorant Infant';
+}
+
+.card_text::first-letter{
+    font-size:100px;
+    display:block;
+    float:left;
+    line-height:0.5;
+    margin:15px 15px 10px 0;
+
 }
 
 /* CSS rules for mobile devices */
@@ -115,10 +125,22 @@ body {
     }
 
 
-        #top_item h1 {
-            color: whitesmoke;
-            font-size: 1.2rem;
-        }
+    #top_item h1 {
+        color: whitesmoke;
+        font-size: 4vw;
+    }
+     #top_item h1::before{
+     content:"";
+     content:"❝";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
+  #top_item h1::after{
+     content:"";
+     content:"❞";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
 
     #card1, #card2, #card3, #card4, #card5 {
         display: flex;
@@ -150,8 +172,20 @@ body {
 
     #top_item h1 {
         color: whitesmoke;
-        font-size: 1.2rem;
+        font-size: 4vw;
     }
+     #top_item h1::before{
+     content:"";
+     content:"❝";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
+  #top_item h1::after{
+     content:"";
+     content:"❞";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
     #card1, #card2, #card3, #card4, #card5 {
         display: flex;
         flex-direction: column;
@@ -184,8 +218,20 @@ body {
 
     #top_item h1 {
         color: whitesmoke;
-        font-size: 1.2rem;
+        font-size: 4vw;
     }
+     #top_item h1::before{
+     content:"";
+     content:"❝";
+     color:whitesmoke;
+     font-size:3.8vw;
+    }
+  #top_item h1::after{
+     content:"";
+     content:"❞";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
     #card1, #card2, #card3, #card4, #card5 {
         display: flex;
         flex-direction: column;
@@ -215,8 +261,20 @@ body {
 
     #top_item h1 {
         color: whitesmoke;
-        font-size: 1.2rem;
+        font-size: 4vw;
     }
+     #top_item h1::before{
+     content:"";
+     content:"❝";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
+  #top_item h1::after{
+     content:"";
+     content:"❞";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
     #card1, #card2, #card3, #card4, #card5 {
         display: flex;
         flex-direction: column;
@@ -246,8 +304,20 @@ body {
 
     #top_item h1 {
         color: whitesmoke;
-        font-size: 1.2rem;
+        font-size: 4vw;
     }
+     #top_item h1::before{
+     content:"";
+     content:"❝";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
+  #top_item h1::after{
+     content:"";
+     content:"❞";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
     #card1, #card2, #card3, #card4, #card5 {
         display: flex;
         flex-direction: column;
@@ -262,6 +332,35 @@ body {
 }
 
 @media (2500px <= width <= 3000px) {
+    #top_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #top_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #top_item h1 {
+        color: whitesmoke;
+        font-size: 4vw;
+    }
+     #top_item h1::before{
+     content:"";
+     content:"❝";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
+  #top_item h1::after{
+     content:"";
+     content:"❞";
+     color:whitesmoke;
+     font-size:3.8vw;
+ }
     #card1, #card2, #card3, #card4, #card5 {
         display: flex;
         flex-direction: column;
