@@ -39,6 +39,8 @@ body {
 }
 
 #card1,#card2,#card3,#card4,card5{
+    display:flex;
+    gap:25px;
     padding: 1% 2% 1% 2%;
     margin-left:2%;
 }
