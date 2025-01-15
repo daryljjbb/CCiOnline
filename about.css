@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height:100vh;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#nav_container ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav_container ul li {
+    list-style: none;
+    cursor: pointer;
+    color: purple;
+    font-size: 1.4rem;
+}
+
+#hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+/* CSS rules for mobile devices */
+@media (320px <= width <=768px) {
+    #nav_container ul {
+        position: fixed;
+        left: -110%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: lightcyan;
+        width: 20%; /* this width of the side menu*/
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    #nav_container ul.active {
+        left: 0;
+    }
+
+    #nav_container ul li {
+        margin: 2.5rem 0;
+    }
+
+    #hamburger {
+        display: block;
+        margin-left: 90%; /* this position the hamburger*/
+        cursor: pointer;
+    }
+
+    #hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburger.active .bar:nth-child(3) {
+        transform: translateY(8px) rotate(-45deg);
+    }
+
+    .bar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 6px 0;
+        background-color: white; /* Set the color to white */
+        transition: 0.4s;
+    }
+    #top_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #top_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #top_item{
+        padding:20%;
+    }
+
+    #top_item h1 {
+        color: whitesmoke;
+        font-size:1.2rem;
+    }
+
+}
