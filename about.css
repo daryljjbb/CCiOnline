@@ -38,12 +38,6 @@ body {
     gap:25px;
 }
 
-#card1,#card2,#card3,#card4,card5{
-    display:flex;
-    gap:25px;
-    padding: 1% 2% 1% 2%;
-    margin-left:2%;
-}
 .card_title{
     color:rgb(207, 21, 43);
 }
@@ -120,8 +114,12 @@ body {
         color: whitesmoke;
         font-size:1.2rem;
     }
-    #main_container #card1,#card2,#card3,#card4,#card5{
-        width:70%;
+    #card1,#card2,#card3,#card4,#card5{
+        display:flex;
+        gap:25px;
+        padding: 1% 2% 1% 2%;
+        margin-left:2%;
+        width:80%;
         background-color:whitesmoke;
         border: 2px solid lightslategray;
         border-radius:10px;
