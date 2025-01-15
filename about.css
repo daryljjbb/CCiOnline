@@ -31,6 +31,14 @@ body {
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
+#main_container{
+    width:95%;
+    display:flex;
+    flex-direction:column;
+}
+#main_container #card1,#card2,#card3,#card4,#card5 h3{
+    color:red;
+}
 
 /* CSS rules for mobile devices */
 @media (320px <= width <=768px) {
@@ -100,6 +108,13 @@ body {
     #top_item h1 {
         color: whitesmoke;
         font-size:1.2rem;
+    }
+    #main_container #card1,#card2,#card3,#card4,#card5{
+        width:50%;
+        background-color:whitesmoke;
+        border: 2px solid lightslategray;
+        border-radius:10px;
+        box-shadow: 4px 4px 4px 4px blueviolet;
     }
 
 }
