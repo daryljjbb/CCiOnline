@@ -68,6 +68,117 @@ nav ul{
     flex: 1;
     padding:2%;
 }
+#middle_section {
+    display: flex;
+    flex-direction:column;
+    width: 90%;
+    min-height: 150px;
+    height: auto;
+}
+
+
+#mid_item1_leftside {
+    flex-direction: column;
+    display: flex;
+    flex: 2;
+    gap:10px;
+}
+#mid_item1_lft_subtitem1 {
+    color: whitesmoke;
+    font-size: 2.5vw;
+}
+#mid_item1_lft_subtitem1 span {
+    color: rgb(207, 21, 43);
+    font-weight: 400;
+}
+#mid_item1_lft_subtitem2{
+    color: whitesmoke;
+    font-size: 2.2vw;
+    font-style:italic;
+    font-weight:200;
+}
+#mid_item1_rightside {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+#mid_sect_item2{
+    width:90%;
+    display:flex;
+    justify-content:center;
+}
+#mid_sect_item2 div{
+    color:whitesmoke;
+    font-size: 3vw;
+    font-style:italic;
+    text-align:center;
+    padding:3% 0 0 0;
+
+}
+#mid_sect_item3 .card_title {
+    color: rgb(207, 21, 43);
+}
+#mid_sect_item4{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:5% auto 0 auto;
+    padding: 1% 2% 1% 2%;
+}
+#mid_sect_item4 div{
+    font-size:3vw;
+    text-align:center;
+    color:whitesmoke;
+}
+#mid_sect_item4  p{
+    text-align:center;
+    color:whitesmoke;
+}
+#mid_sect_item5{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    margin: 2% auto 0 auto;
+    justify-content:center;
+}
+#mid_item5_header{
+    padding:3% 5% 3% 5%;
+    border: 1px solid lightslategray;
+    border-radius:10px;
+    background-color:black;
+    color: rgb(207, 21, 43);
+    text-align:center;
+    font-size:2.5vw;
+
+}
+#mid_item5_list_container{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-content:center;
+    margin:0 auto 0 auto;
+    border:none;
+}
+#mid_item5_list_container > ul{
+    display:block;    
+
+}
+#mid_item5_list_container ul li {
+    list-style: none;
+    color: whitesmoke;
+    font-size: 2.5vw;
+    line-height: 30px;
+}
+
+#mid_item5_list_container ul li::before{
+     content: "";
+     content: "➤ ";
+     color:blueviolet;
+     font-size:2.3vw;
+
+}
+
 
 /* CSS rules for mobile devices */
  @media (320px <= width <=768px) {
@@ -132,4 +243,47 @@ nav ul{
      color:blueviolet;
      font-size:3vw;
  }
+     #mid_sect_item1 {
+        display: flex;
+        border: 2px solid lightslategray;
+        border-radius: 10px;
+        min-height:40px;
+        height:auto;
+        width: 80%;
+        padding:2.5% 1.5% 2.5% 1.5%;  /*padding: top,right,bottom,left*/
+        margin-left:auto;/*center the div*/
+        margin-right:auto;/*center the div*/    
+
+    }
+    #mid_item1_rightside button {
+        background: black;
+        border: 2px solid lightslategray;
+        border-radius: 10px;
+        color: rgb(207, 21, 43);
+        padding: 2%;
+        width: 110px;
+        height: 40px;
+    }
+    #mid_sect_item3{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-content:center;
+        gap:20px;
+        margin-top:2%;
+        
+    }
+    #mid_sect_item3 #card1, #card2, #card3{
+        width:50%;
+        background-color:whitesmoke;
+        border:2px solid lightslategray;
+        border-radius:10px;
+        box-shadow:4px 4px 4px 4px blueviolet;
+        text-align:center;
+        margin: 1% auto 0 auto;
+        padding: 1.5%;
+    
+    }
+
  }
