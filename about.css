@@ -37,10 +37,10 @@ body {
     flex-direction:column;
     gap:10px;
 }
-#main_container #card1,#card2,#card3,#card4,#card5 h3{
-    color:red;
+.card_title{
+    color:rgb(207, 21, 43);
 }
-#main_container #card1,#card2,#card3,#card4,#card5 p{
+.card_text{
     color:black;
 }
 
